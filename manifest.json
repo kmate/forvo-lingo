@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "forvo-lingo",
+  "version": "0.0.1",
+
+  "description": "Integration of Forvo pronunciation dictionary into Duolingo",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "permissions": [
+    "http://forvo.com/"
+  ],
+
+  "background": {
+    "scripts": ["jquery-2.1.4.min.js", "background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.duolingo.com/*"],
+      "js": ["jquery-2.1.4.min.js", "content.js"]
+    }
+  ]
+}
+

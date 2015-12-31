@@ -5,7 +5,7 @@ Integration of [Forvo](http://forvo.com) pronunciation dictionary into [Duolingo
 
 ## Usage
 
-Install it into a decent Chrome-based browser. It inserts an additional button into the user interface of almost all practice challenges on Duolingo. That button enables the playback of a native speaker pronunciation of the given expression, provided by Forvo.
+Install it into a decent Chrome-based browser. It inserts an additional button into the user interface of text translation practice challenges on Duolingo. That button enables the playback of a native speaker pronunciation of the given expression, provided by Forvo.
 
 
 ## Warning

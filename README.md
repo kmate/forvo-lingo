@@ -1,6 +1,6 @@
 # ![logo](/icon48.png) forvo-lingo
 
-Integration of [Forvo](http://forvo.com) pronunciation dictionary into [Duolingo](http://duolingo.com). A truly untested and undocumented extension for the newest Chrome browsers. (B)eat if you can! :cake:
+Integration of [Forvo](http://forvo.com) pronunciation dictionary into [Duolingo](http://duolingo.com). A truly untested and undocumented extension for the newest Chrome browsers.
 
 
 ## Usage

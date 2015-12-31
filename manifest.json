@@ -13,7 +13,8 @@
     "http://forvo.com/"
   ],
   "web_accessible_resources": [
-    "forvo-button.png"
+    "button-keyboard.png",
+    "button-speaker.png"
   ],
 
   "background": {

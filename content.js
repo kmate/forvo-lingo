@@ -71,7 +71,7 @@ function addPlayerToKeyboard(keyboard) {
   img.classList.add('forvo-player');
   img.classList.add('vkeyboard_key');
   img.classList.add('column');
-  img.src = chrome.extension.getURL('forvo-button.png');
+  img.src = chrome.extension.getURL('button-keyboard.png');
   img.title = 'Pronounce with Forvo';
   keyboard.prepend(img);
 }
@@ -113,7 +113,7 @@ function addPlayerToSpeaker(speaker) {
   span.style.left = '7px';
   span.style.marginRight = '14px';
   var img = document.createElement('img');
-  img.src = chrome.extension.getURL('forvo-button.png');
+  img.src = chrome.extension.getURL('button-speaker.png');
   img.title = 'Pronounce with Forvo';
   img.style.width = '30px';
   img.style.height = '30px';

@@ -1,11 +1,11 @@
 # ![logo](/icon48.png) forvo-lingo
 
-Integration of Forvo pronunciation dictionary into Duolingo. A truly untested and undocumented extension for the newest Chrome browsers. (B)eat if you can! :cake:
+Integration of [Forvo](http://forvo.com) pronunciation dictionary into [Duolingo](http://duolingo.com). A truly untested and undocumented extension for the newest Chrome browsers. (B)eat if you can! :cake:
 
 
 ## Usage
 
-Install it into a decent Chrome-based browser. It inserts an additional button into the user interface of almost all practice challenges on [Duolingo](http://duolingo.com). That button enables the playback of a native speaker pronunciation of the given expression, provided by [Forvo](http://forvo.com).
+Install it into a decent Chrome-based browser. It inserts an additional button into the user interface of almost all practice challenges on Duolingo. That button enables the playback of a native speaker pronunciation of the given expression, provided by Forvo.
 
 
 ## Warning

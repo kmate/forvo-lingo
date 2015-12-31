@@ -3,12 +3,20 @@ console.info('forvo-lingo v0.0.1 background script loaded');
 chrome.runtime.onMessage.addListener(searchListener);
 
 function searchListener(request, sender, sendResponse) {
-  var url = createUrl(request.phrase);
-  console.info('getting pronunciations from ' + url);
+  var tasks = request.words.map(function(word) {
+    return $.get(createUrl(word));
+  });
 
-  $.get(url, function(responseHtml) {
-    var data = fetchItems(responseHtml);
-    console.log(data);
+  $.when.apply($, tasks).done(function() {
+    var data = [];
+    if (1 == tasks.length) {
+       data.push(fetchItems(arguments[0]));
+    } else {
+      for (var i = 0; i < arguments.length; ++i) {
+        data.push(fetchItems(arguments[i][0]));
+      }
+    }
+    console.debug(data);
     sendResponse({data: data});
   });
 
@@ -20,7 +28,7 @@ function createUrl(phrase) {
 }
 
 function fetchItems(responseHtml) {
-  return $(responseHtml).find('a.play').map(fetchItem).get();
+  return $(responseHtml).find('a.play').map(fetchItem).get(0);
 }
 
 function fetchItem() {

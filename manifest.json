@@ -12,11 +12,13 @@
   "permissions": [
     "http://forvo.com/"
   ],
+  "web_accessible_resources": [
+    "forvo-button.png"
+  ],
 
   "background": {
     "scripts": ["jquery-2.1.4.min.js", "background.js"]
   },
-
   "content_scripts": [
     {
       "matches": ["https://www.duolingo.com/*"],
